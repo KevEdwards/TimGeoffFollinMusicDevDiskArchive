@@ -1,0 +1,77 @@
+ORG 50000
+LOAD 0C000H
+
+TUNES:          EQU 1
+EFFECTS:        EQU 1
+
+;--------------------------------------
+DW CALC
+DB TUNES
+DB EFFECTS
+;--------------------------------------
+DATA_TOP:       
+
+
+TUNES_A:        DW WARE_A
+DW 1
+DW 2
+DW 3
+DW 4
+DW 5
+DW 6
+DW 7
+DW 8
+DW 9
+
+TUNES_B:        DW WARE_B
+DW 1
+DW 2
+DW 3
+DW 4
+DW 5
+DW 6
+DW 7
+DW 8
+DW 9
+
+TUNES_C:        DW WARE_C
+DW 1
+DW 2
+DW 3
+DW 4
+DW 5
+DW 6
+DW 7
+DW 8
+DW 9
+
+FX_TAB:         DW FIRE
+;--------------------------------------
+FOR:            EQU 080H
+NEXT:           EQU 081H
+LENGTH:         EQU 082H
+STOP:           EQU 083H
+GOSUB:          EQU 084H
+RETURN:         EQU 085H
+TRANS:          EQU 086H
+DISTORT:        EQU 087H
+SEND:           EQU 088H
+ADSR:           EQU 089H
+ENVON:          EQU 08AH
+WOBBLE:         EQU 08BH
+PORT:           EQU 08CH
+VIB:            EQU 08DH
+IGNORE:         EQU 08EH
+EFFECT:         EQU 08FH
+GOTO:           EQU 090H
+GATE_CON:       EQU 091H
+ENDIT:          EQU 092H
+;======================================
+; SOUND FX DATA
+
+
+FIRE:           DB 0
+DW FIRE
+DB 0FFH
+
+S$#0!<UNKNOWN 0x81>39DEX   <UNKNOWN 0xe0><UNKNOWN 0xe0><UNKNOWN 0x86>zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
